@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | E-commerce product page</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav>
+    <li id="logo" class="navpos"><a>sneakers</a></li>
+    <ul id="midlist" class="navpos1">
+        <li><a>Collections</a></li>
+        <li><a>Men</a></li>
+        <li><a>Women</a></li>
+        <li><a>About</a></li>
+        <li><a>Contact</a></li>
+    </ul>
+    <ul class="navpos2">
+      <li><button id="cart1"><img class="cartbut1" src="images/icon-cart.svg" ></button></li>
+      <div id="cart-dropdown" class="hidden">
+        <h2>Cart</h2>
+        <div id="cart-items">
+            <!-- Cart items will be injected here -->
+        </div>
+        <p>Total: $<span id="total-price">0.00</span></p>
+        <button id="checkout">Checkout</button>
+    </div>
+      <li><button id="avatar"><img  src="images/image-avatar.png" ></button></li>
+    </ul>
+    </nav>
+    <div id="bar"></div>
+<div class="idbox">
+    <div class="idbox1">
+      <div><img id="mainImage" src="images/image-product-1.jpg" width="100%" class="image-big"></div>
+      <div class="thumbbox">
+      <button class="thumbnail" onclick="changeImage('images/image-product-1.jpg')"><img src="images/image-product-1-thumbnail.jpg" width="100%" height="100%" alt=""></button>
+      <button class="thumbnail" onclick="changeImage('images/image-product-2.jpg')"><img src="images/image-product-2-thumbnail.jpg" width="100%" height="100%" alt=""></button>
+      <button class="thumbnail" onclick="changeImage('images/image-product-3.jpg')"><img src="images/image-product-3-thumbnail.jpg" width="100%" height="100%" alt=""></button>
+      <button class="thumbnail" onclick="changeImage('images/image-product-4.jpg')"><img src="images/image-product-4-thumbnail.jpg" width="100%" height="100%" alt=""></button>
+      </div>
+    </div>
+    <div class="idbox2">
+      <h3>SNEAKER COMPANY</h3>
+
+      <h1>Fall Limited Edition Sneakers</h1>
+      <p>These low-profile sneakers are your perfect casual wear companion. Featuring a 
+      durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+      <h2>$125.00 <span id="offtag"> 50% </span></h2>
+      <p1>$250.00</p1>
+
+      <div class="buttonbox">
+        <div class="but1">
+          <button id="decrease-quantity" class="cartbut"><a5>-</a5></button>
+
+          <input type="text" id="quantity" value="0">
+
+          <button id="increase-quantity" class="cartbut"><a5>+</a5></button>
+        </div>
+        <button class="but2" id="add-to-cart">
+          <img class="iconcart" src="images/icon-cart.svg" alt="" >
+          <a4>Add to cart </a4></button>
+      </div>
+    </div>
+</div>
+  <script src="main.js"></script>
+  </div>
+</body>
+</html>
